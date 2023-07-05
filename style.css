@@ -1,0 +1,22 @@
+@charset "UTF-8";
+html {
+  font-size: 20px;
+}
+
+:root{
+  --titulo-cor: #FFAB30;
+}
+
+body, p, h1, h2, h3, h4, a, button, span, div, main, section, nav, footer, figure, ul, li{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  color: var(--titulo-cor);
+  font-size: 1.5rem;
+}
+
+button {
+  font-size: 1rem;
+}
