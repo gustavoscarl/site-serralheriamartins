@@ -6,11 +6,18 @@
   <title>Serralheria Martins - Site Oficial</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
  <header>
-  <h1>Serralheria Martins</h1>
-  <p>Portão / Grade / Escada</p>
+  <div class="intro">
+    <h1>Serralheria Martins</h1>
+    <p>Portões / Grade / Escada</p>
+  </div>
+  <i id="burger" class="material-icons only-mobile">menu</i>
   <nav class="link-interno">
     <ul>      
       <li><a href="#sobre">Sobre nós</a></li>
@@ -22,11 +29,12 @@
  </header>
  <main>
   <section id="sobre">
+    <h2>Sobre</h2>
     <p>Com mais de 20 anos de atuação em São José do Rio Preto e Região, priorizamos agilidade, segurança e conforto para os nossos clientes. Somos referência na área e sempre levamos o melhor para você e sua família.</p>
-    <figure>Imagem aqui</figure>
+    <div id="img-div"><img id="img-sobre" src="img/christina-deravedisian-QbrVMARnfxI-unsplash.jpg" alt=""></div>
   </section>
   <section id="galeria">
-    <button>Solicite um orçamento.<i class="fa fa-whatsapp"></i></button>
+    <a href="#" target="_blank" rel="external">Solicite um orçamento.<i class="fa fa-whatsapp"></i></a>
     <div class="projetos">
       <h3>Nossos serviços</h3>
       <h4>Portões basculantes sob medida</h4>
@@ -79,7 +87,7 @@
  <section id="contato">
   <h3>Realize agora seu orçamento!</h3>
   <p>Descubra nossos serviços de excelência em serralheria. Solicite agora mesmo um orçamento personalizado e garanta a segurança e beleza que seu espaço merece.</p>
-  <a href="#"><i class="fa fa-whatsapp"></i></button>Contato</a>
+  <a href="#" target="_blank" rel="external"><i class="fa fa-whatsapp"></i>Contato</a>
  </section>
  <footer>
   <p>Site desenvolvido por <a href="#" target="_blank" rel="external">Gustavo Lucianelli</a>- Todos os Direitos Reservados</p>

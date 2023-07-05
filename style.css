@@ -1,10 +1,13 @@
 @charset "UTF-8";
 html {
   font-size: 20px;
+  font-family: var(--tipografia-principal)
 }
 
 :root{
   --titulo-cor: #FFAB30;
+  --cor-secundaria: #7D7D7D;
+  --tipografia-principal: 'Ysabeau SC', sans-serif;
 }
 
 body, p, h1, h2, h3, h4, a, button, span, div, main, section, nav, footer, figure, ul, li{
@@ -12,11 +15,96 @@ body, p, h1, h2, h3, h4, a, button, span, div, main, section, nav, footer, figur
   padding: 0px;
 }
 
-h1{
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.intro{
   color: var(--titulo-cor);
+  background: black;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.intro h1{
   font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+nav {
+  background-color: var(--cor-secundaria);
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-direction: column;
+}
+
+li a{
+  color:rgb(255, 255, 255);
+
+}
+
+li {
+  border: 1px solid;
+  color:rgb(194, 194, 194) ;
+  text-align: center;  
+  padding: 10px 5px;
+}
+
+#burger {
+  background-color:rgb(51, 51, 51);
+  display: block;
+  padding: 0px;
+  color: rgb(241, 241, 241);
+  text-align: center;
+  padding: 5px 0px;
+}
+
+#burger:hover {
+  cursor: pointer;
+}
+
+#sobre{
+  padding-top: 40px;
+  padding-left: 10px;
+  background: #fcf8f8;
+}
+
+#sobre h2{
+  text-transform: uppercase;
+}
+
+#sobre p{
+  font-family: Arial, Helvetica, sans-serif ;
+  font-style: italic;
+  padding: 20px 0px;
+  margin-bottom: 30px;
+}
+
+#img-sobre{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  border-radius: 50%;
+}
+
+#img-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
 }
 
 button {
   font-size: 1rem;
+  background-color: white;
+  border-style: none;
 }
