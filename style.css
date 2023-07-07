@@ -36,6 +36,11 @@ a{
 
 nav {
   background-color: var(--cor-secundaria);
+  display: none;
+}
+
+.active{
+  display: block;
 }
 
 ul{
@@ -57,6 +62,10 @@ li {
   padding: 10px 5px;
 }
 
+#robbu-whatsapp-button{
+  z-index: 2;
+}
+
 #burger {
   background-color:rgb(51, 51, 51);
   display: block;
@@ -71,20 +80,24 @@ li {
 }
 
 #sobre{
-  padding-top: 40px;
+  padding-top: 60px;
   padding-left: 10px;
-  background: #fcf8f8;
+  background: #fcfaf9;
+  font-family: Roboto, sans-serif;
+
 }
 
 #sobre h2{
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 #sobre p{
   font-family: Roboto, sans-serif ;
   font-style: italic;
   padding: 20px 0px;
-  margin-bottom: 30px;
+  margin-bottom: 30px;  
+  font-weight: 400;
 }
 
 #img-sobre{
@@ -168,7 +181,9 @@ li {
   transform: translateY(-50%);
   z-index: 1;
   background: none;
-  color: white;
+  border: none;
+  color: var(--titulo-cor);
+  font-size: 20px;
 }
 
 .slick-list{
@@ -216,4 +231,60 @@ li {
 .slick-dots li.slick-active button {
   background-color: #dbdbdb;
   opacity: 1;
+}
+
+.square-info{
+  background-color:rgb(51, 51, 51) ; 
+  display: inline-flex;  
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 50px;  
+}
+
+.square{
+  border: 1px solid rgb(252, 247, 220);
+  box-shadow: 0px 0px 7px 2px rgb(255, 241, 159);
+  text-align: center;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 35px 0px;
+  font-size: 30px;
+  border-radius: 5px;
+  color: var(--titulo-cor);
+}
+
+#local{
+  background: #fffdfb;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+#local>p {
+  padding: 10px 0px;
+  font-size: 20px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+#mapa{
+  margin: 40px auto 0px auto;
+  max-width: 600px;
+  padding-left: 0px;
+}
+
+.mapa-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#mapa-desc {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+  font-style: italic;
 }

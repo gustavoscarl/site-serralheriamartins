@@ -12,6 +12,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+  <a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5567982203081&  text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20or%C3%A7amento">
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+</a>
 </head>
 <body>
  <header>
@@ -20,7 +24,7 @@
     <p>Portões / Grade / Escada</p>
   </div>
   <i id="burger" class="material-icons only-mobile">menu</i>
-  <nav class="link-interno">
+  <nav class="link-interno active">
     <ul>      
       <li><a href="#sobre">Sobre nós</a></li>
       <li><a href="#galeria">Galeria</a></li>      
@@ -36,7 +40,7 @@
     <div id="img-div"><img id="img-sobre" src="./img/porta-small.jpg" alt=""></div>
   </section>
   <section id="galeria">
-    <a href="#" target="_blank" rel="external"><p>Solicite um orçamento <i id="zap" class="fa fa-whatsapp"></i></p></a>
+    <a href="https://api.whatsapp.com/send?phone=5567982203081&  text=Ol%C3%A1,%20Gostaria%20de%20fazer%20um%20or%C3%A7amento" target="_blank" rel="external"><p>Solicite um orçamento <i id="zap" class="fa fa-whatsapp"></i></p></a>
     <div class="projetos">
       <h3>Nossos Serviços ↴</h3>
       <h4>Portões basculantes sob medida</h4>
@@ -127,18 +131,22 @@
       <span>Trabalhos Realizados</span>
     </div>
     <div class="square">
-      <p>SJRP</p>
-      <span>Atendemos São José do Rio Preto e Região</span>
+      <span>Atendemos<br> São José do Rio Preto e Região</span>
     </div>
     <div class="square">
-      <p>+DE 20</p>
-      <span>Anos De Experiência</span>
+      <p>+DE 20 Anos</p>
+      <span> De Experiência</span>
     </div>
   </section>
  </main>
  <section id="local">
-  <p>Estamos Localizados Na Av.Alberto Andaló, 0001 - Jardim Redentora</p>
-  <p class="desktop-only">Confira ao Lado no Google Maps nossa exata Localidade ➟</p>
+  <p>Estamos Localizados na: <br>Rua Dr. Argemiro Acayaba de Toledo 535, Residencial Cidade Jardim
+  </p>    
+São José do Rio Preto CEP 15081-060
+  <div class="mapa-container">
+    <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14914.168896438749!2d-49.37558337702922!3d-20.850184140753942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bc4d2b33354291%3A0x58ff8f6ef7dc70f6!2sSerralheria%20Martins!5e0!3m2!1spt-BR!2sbr!4v1688699111841!5m2!1spt-BR!2sbr" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p id="mapa-desc">Confira no Google Maps nossa exata Localidade </p>
+  </div>
  </section>
  <section id="contato">
   <h3>Realize agora seu orçamento!</h3>

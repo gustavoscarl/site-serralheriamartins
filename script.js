@@ -15,3 +15,11 @@ $(document).ready(function(){
   });
 });
 
+
+const buttonBurger = document.querySelector('#burger');
+      menu = document.querySelector('nav');
+
+buttonBurger.addEventListener('click', () => {
+  menu.classList.toggle('active')
+})
+
