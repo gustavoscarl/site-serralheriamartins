@@ -288,3 +288,57 @@ li {
   margin-bottom: 40px;
   font-style: italic;
 }
+
+#contato{
+  background: #fff7ec;
+  padding-left: 10px;  
+  color:#585858
+}
+
+#contato h3{
+  text-align:center;
+  font-weight: 600;
+  text-transform: uppercase;
+  
+}
+
+#contato p{
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding-top: 20px;
+}
+
+#contato a{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  padding: 15px 30px;
+  font-size: 24px;
+  border: 2px solid #ffe1b9;
+  border-radius: 10px;
+  background-color: rgb(51, 51, 51);
+  color: var(--titulo-cor)
+}
+
+.contato-container{
+  display:inline-flex;
+  width: 90%;
+  justify-content: center;
+}
+
+#contato a i{
+  padding-right: 10px;
+}
+
+footer{
+  padding-top: 20px;
+  text-align: center;
+  background: black;
+  color: rgb(168, 168, 168);
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+
+footer a{
+  color: var(--titulo-cor)
+}
