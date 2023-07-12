@@ -22,7 +22,7 @@ a{
 
 .intro{
   color: var(--titulo-cor);
-  background: black;
+  background: rgb(32, 32, 32);
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 20px;
@@ -36,7 +36,6 @@ a{
 
 nav {
   background-color: var(--cor-secundaria);
-  display: none;
 }
 
 .active{
@@ -126,18 +125,19 @@ li {
   color: white;  
 }
 
-#galeria>a{
+aside>a{
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 18px;
-  padding-top: 40px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  background: rgb(51, 51, 51);
+  padding: 40px 0px;
 }
 
-#galeria>a p{
+aside>a p{
   padding: 20px 15px;
   border-radius: 10px;
   box-shadow: 2px 0px 10px 4px rgba(243.75, 123.9945652173913, 0, 0.88);
@@ -327,7 +327,7 @@ li {
 
 .contato-container{
   display:inline-flex;
-  width: 90%;
+  width: 100%;
   justify-content: center;
 }
 
@@ -353,26 +353,40 @@ footer a{
 {
   .intro {
     text-align: start;
-    padding-left: 15px;
+  }
+
+  .intro h1{
+    font-size: 2rem;
+    padding-left: 18%;
+  }
+
+  .intro p{
+    padding-left: 23%;
   }
 
   #sobre {
     display: flex;
    }
 
+   #sobre>div{
+    margin-top: 75px;
+   }
+
    #burger {
     display: none;
    }
 
- ul {
-    background:black;
+ nav ul {
+    background:rgb(32, 32, 32);
     flex-direction: row;
     justify-content: flex-end;
     color: var(--titulo-cor);
    }
 
   ul li{
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 5px;
+    margin: 5px 5px;
   }
 
    ul a{
@@ -382,5 +396,74 @@ footer a{
 
    #img-div img{
     max-width: 800px;
+  }
+  #galeria{
+    display: flex;    
+    flex-direction: column;
+  }
+
+  .grid-container{ 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .grid-container:nth-of-type(even){
+    flex-direction: row-reverse;
+  } 
+  .square-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .projetos{
+    max-width:550px;
+  }
+
+  .projetos h3{
+    margin: 30px 0px;
+  }
+  .projetos h4{
+    margin: 30px 0px;
+  }  
+  
+  .square{
+    margin: 0px 25px;
+  }
+
+  .projetos h4::before{
+    content: '';
+    height: 5px;
+    width: 17px;
+    background: rgb(194, 126, 0);
+    display: block;
+    position: relative;
+    left: -15px;
+    top: 21px;
+    z-index: 0;
+  }
+
+  #local{
+    display:flex;
+    justify-content: center;
+  }
+
+  #local>.endereço>p{
+    margin-top: 75px;
+  }
+
+  .strong{
+    font-weight: bold;
+  }
+
+  .mapa-container{
+    min-width: 600px;
+  }
+
+  #contato>p{
+    margin: 50px auto 0px auto;
+    text-align:center;
+    max-width: 400px;
   }
 }
