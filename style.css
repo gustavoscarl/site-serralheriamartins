@@ -118,12 +118,15 @@ li {
 }
 
 #img-div img{
-  max-width: 600px;
+  max-width: 650px;
 }
 
 #galeria{
   background: rgb(51, 51, 51);
-  color: white;  
+  color: white;
+  display: block;
+  flex-direction: column;
+  align-items: center;
 }
 
 aside>a{
@@ -171,12 +174,12 @@ aside>a p{
   margin-right: 50px;
   padding-bottom: 80px;
   border-radius: 50px;
-  max-width: 450px;
+  max-width: 550px;
 } 
 
 .autoplay img{
   height: 500px;  
-  width: 500px;  
+  width: 550px;  
   border-radius: 50px;
 }
 
@@ -268,11 +271,18 @@ aside>a p{
   padding-top: 50px;
   padding-left: 10px;
 }
+.endereço{
+  text-align: center;
+}
 
 #local>p {
   padding: 10px 0px;
   font-size: 20px;
   font-family: Roboto, Arial, sans-serif;
+}
+
+.strong{
+  font-weight: bold;
 }
 
 #mapa{
