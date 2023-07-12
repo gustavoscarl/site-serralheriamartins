@@ -306,7 +306,7 @@ aside>a p{
 }
 
 #contato{
-  background: #fff7ec;
+  background: linear-gradient( #fffdfb,#ffedd3);
   padding-left: 10px;  
   color:#585858
 }
