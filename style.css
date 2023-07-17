@@ -36,6 +36,7 @@ a{
 
 nav {
   background-color: var(--cor-secundaria);
+  display: none;
 }
 
 .active{
@@ -385,6 +386,10 @@ footer a{
 
    #burger {
     display: none;
+   }
+
+   nav{
+    display: block;
    }
 
  nav ul {
